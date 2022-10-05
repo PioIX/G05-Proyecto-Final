@@ -1,0 +1,25 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <form id="login">
+            <label>Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+            <label>Contraseña</label>
+            <input type="password" id="contra" name="contra"> <br><br>
+        </form>
+
+      
+            <button type="submit" onclick="login()">Login</button>
+      
+            <button type="submit" onclick="registrarse()">Registrarse</button>
+        
+      <script src="{{url_for('static', filename='script/login.js')}}"></script>
+      <script src="{{url_for('static', filename='script/register.js')}}"></script>
+    </body>
+</html>
+<!-- type="button" onclick="registro()" -->

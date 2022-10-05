@@ -1,0 +1,31 @@
+nav {
+    background-color: #1F5A95;
+    border-top: solid 1px #ccc;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    color: lightcyan;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+nav a.actual {
+    background-color: #ccc;
+    font-weight: bold;
+    color: black;
+}
+#tabla{
+  border:5px solid black;
+  padding: 5px;
+}
+#fila{
+  position: absolute;
+}
