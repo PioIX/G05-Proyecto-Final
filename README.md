@@ -16,4 +16,5 @@ El usuario se tendrá que registrar y podrá jugar solamente un 1v1 online mient
 
 Una vez dentro de la partida se jugará la partida normalmente y la partida se elimina y la siguiente se creará con un nuevo id, lo que servirá para registrar cuantas partidas se llevan jugadas.
 
-
+Base de datos:
+<img src="diagram.png" alt="Clases"/>
