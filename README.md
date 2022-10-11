@@ -3,7 +3,7 @@
 ### Grupo 5
 #### Integrantes:
 - Nicolás Gil Rodríguez
-- Joacquín Gómez
+- Joaquín Gómez
 - Santiago Ivaldi
 - Bruno Spataro
 ___
@@ -25,7 +25,14 @@ Base de datos:
 - Tenés la pantalla de partidas
 - Hay 3 bases de datos, una de las cartas, otra de los usuarios (con admin que puede cambiar cosas) y otra de las partidas
 - Admin puede cambiar data del usuario
-
+<img src="inicio.jpg" alt="Clases"/>
+<img src="mesas.jpg" alt="Clases"/>
+<img src="reglas.jpg" alt="Clases"/>
+<img src="mesas2.jpg" alt="Clases"/>
+<img src="mesa.jpg" alt="Clases"/>
+<img src="mesas3.jpg" alt="Clases"/>
+<img src="crear.jpg" alt="Clases"/>
+<img src="ingame.jpg" alt="Clases"/>
 ___
 
 #### División del trabajo
