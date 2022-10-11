@@ -27,7 +27,7 @@ Base de datos:
 - Admin puede cambiar data del usuario
 <img src="inicio.jpg" alt="Clases"/>
 <img src="mesas.jpg" alt="Clases"/>
-<img src="reglas.jpg" alt="Clases"/>
+<img src="Reglas.jpg" alt="Clases"/>
 <img src="mesas2.jpg" alt="Clases"/>
 <img src="mesa.jpg" alt="Clases"/>
 <img src="mesas3.jpg" alt="Clases"/>
