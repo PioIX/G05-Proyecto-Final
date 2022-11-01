@@ -19,7 +19,7 @@ Una vez dentro de la partida se jugará la partida normalmente y la partida se e
 Base de datos:
 <img src="diagram.png" alt="Clases"/>
 
-#### ¿Cómo anda el juego?
+#### ¿Cómo funciona el juego?
 - Te registrás
 - Te logueás
 - Tenés la pantalla de partidas
