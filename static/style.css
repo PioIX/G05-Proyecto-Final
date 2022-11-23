@@ -1,3 +1,53 @@
+/****************** Todo ******************/
+*{
+  font-family: lucida-console;
+}
+
+body{
+  background-color:#c3ccaf;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #311d39;
+}
+
+input{
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+  background-color:transparent;
+}
+
+#volver{
+font-family: Roboto Condensed;
+font-weight: 0;
+font-size: 16px;
+color: #ffffff;
+background: linear-gradient(90deg, #311d39 0%, #a51a41 100%);
+padding: 10px 30px;
+border: solid #cfcebf 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+#volver:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #67434f 0%, #a51a41 100%);
+color: ##1c31a5;
+border: solid 2px #0066cc;
+}
+
+/****************** Navegador de Reglas ******************/
 nav {
     background-color: #1F5A95;
     border-top: solid 1px #ccc;
@@ -22,10 +72,164 @@ nav a.actual {
     font-weight: bold;
     color: black;
 }
-#tabla{
-  border:5px solid black;
-  padding: 5px;
+
+/****************** Mesas Disponibles ******************/
+.reglas{
+font-weight: 0;
+font-size: 16px;
+color: #ffffff;
+background: linear-gradient(90deg, #311d39 0%, #a51a41 100%);
+padding: 10px 30px;
+border: solid #cfcebf 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition: 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
 }
-#fila{
-  position: absolute;
+#mesas_dispo{
+  margin-left:20px;
+}
+.reglas:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #67434f  0%, #a51a41 100%);
+color: ##1c31a5;
+border: solid 2px #0066cc;
+}
+
+#tabla{
+  border-radius:17px;
+  padding: 5px;
+  background-color:#67434f;
+  margin-bottom:40px;
+  margin:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#reglas{
+  margin-right:800px;
+  padding: 10px;
+  float:right;
+}
+
+#crear{
+  padding: 10px;
+  float:left;
+}
+
+#botoncito{
+  display:flex;
+  justify-content:space-between;
+}
+
+.mesa{
+  text-align: center;
+  color: #311d39 ;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: sticky;
+  border-radius: 13px;
+  padding: 15px;
+  background-color:#9b8e7e;
+  margin-bottom: 20px;
+}
+
+/****************** Crear Mesa ******************/
+.titulo{
+  color: #311d39;
+  border-radius: 30px;
+  font-size:50px;
+  padding-left:30px;
+} 
+.menu{
+  background-color:grey;
+  border-radius: 13px;
+  padding:30px;
+  margin:30px;
+  margin-top:50px;
+  font-size:30px;
+  padding:50px;
+}
+#reglas{
+  margin-right:800px;
+  padding: 10px;
+  float:right;
+}
+
+#puntos{
+  font-size:20px;
+  padding:-1px;
+  }
+#fede{
+  display:flex;
+  justify-content:space-between;
+}
+
+.salgado{
+  float:right;
+}
+/****************** Reglas ******************/
+
+#caja_gris{
+  background-color:#c3ccaf;
+  border-radius: 13px;
+  margin-top:30px;
+  padding:50px;
+  margin:30px;
+  margin-top:90px;
+}
+
+#reglas·{
+  color:#5b41bc;
+  font-size:30px;
+}
+.h2falso{
+  color:#a51a41;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-size:40px;
+  text-align-last: center;
+}
+.negrita{
+font-weight:bold;
+color: #a51a41;
+text-decoration-style: wavy; 
+}
+
+/****************** Esperando a un oponente ******************/
+#.{
+
+}
+
+
+
+/*****************Tablas Usuarios ******************/
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
 }

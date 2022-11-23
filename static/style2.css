@@ -1,0 +1,157 @@
+/****************** Todo ******************/
+*{
+  font-family: Arial;
+}
+body{
+  background-color:#c3ccaf;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #311d39;
+}
+
+.inactivo {
+  background-color: #707070;
+  color: #3b3b3b;
+  border-color:#3b3b3b;
+  opacity: .65;
+  cursor: default;
+}
+
+/****************** Contador ******************/
+
+#contador{
+  border-color:black;
+  border-width: 3px;
+  border-style:solid;
+  background: linear-gradient(80deg, white, transparent );
+  color:#484848;
+  width:100px;
+  padding:7px;
+  margin-bottom: 10px;
+  border-radius:7px;
+}
+
+#ellos{
+  border-top-style: solid;
+  border-width: 3px;
+  border-top-color: black;
+}
+
+/****************** Mesa ******************/
+#mesa{
+  background-color:#67434f;
+  margin-right: 25% ;
+  margin-left: 25% ;
+  padding:30px;
+}
+
+#cartasTuyas{
+  /*margin-top:10px;*/
+  /*background-color:red;*/
+  display:flex;
+  font-size: 50px;
+  justify-content: center;
+  margin-right:5px;
+  width:100%;
+}
+
+#cartasContrincante{
+  /*background-color:blue;*/
+  display:flex;
+  justify-content:center;
+  margin-right:5px;
+  width:100%;
+}
+
+
+/****************** Barra de Opciones ******************/
+#opciones{
+  display:flex;
+  position:absolute;
+  justify-content: flex-end;
+  align-items: flex-end;
+  left:0px; 
+  right:0px; 
+  bottom:0px; 
+  height:50px; 
+  z-index:0;
+
+}
+
+.opcion{
+  margin:10px;
+}
+
+.boton{
+  border-radius:30px;
+  background-color:transparent;
+  font-size:15px;
+  border-color: #311d39  ;
+  color:#311d39 ;
+  padding: 10px;
+  border-style:solid; 
+}
+
+.boton:hover{
+  color: white;
+  background-color: #311d39;
+  transition: background-color .5s;
+  transition: color .5s;
+}
+
+
+/****************** Mano ******************/
+
+.cartas{
+  position: relative;
+  width: 75px;
+  height: 100px;
+  border-radius: 10%;
+  background-size:cover;
+  background-position: center;
+ 
+}
+.carta{
+  position: relative;
+  width: 75px;
+  background-size: cover;
+  background-position: center;
+  background-color:green;
+  margin:5px;
+}
+
+#mano{
+  margin:20px;
+  margin-top:90px;
+  display:flex;
+  justify-content:center;
+  background-color: black;
+  border-radius:50px;
+}
+
+#volver{
+font-family: Roboto Condensed;
+font-weight: 0;
+font-size: 16px;
+color: #ffffff;
+background: linear-gradient(90deg, #311d39 0%, #a51a41 100%);
+padding: 10px 30px;
+border: solid #cfcebf 2px;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+#volver:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #67434f 0%, #a51a41 100%);
+color: ##1c31a5;
+border: solid 2px #0066cc;
+}

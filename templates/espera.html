@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+
+<div class="titulo">
+  <h1>Esperando a un oponente ...</h1>
+  <h3>Informacion de la sala:</h3>
+  <ul>
+</div>
+    <div style="display:flex"> 
+      <li>ID: &nbsp;</li> <h id="id">{{ id }}</h> 
+    </div>
+    <li name="roomname">Nombre: {{ nombre }}</li>
+    <li>Puntos: {{ puntos }}</li>
+  </ul>
+</div>
+
+
+      <div id=inicia>    
+            <button class="boton"type="submit" onclick="eliminar()">Volver al menu</button>
+      </div>     
+
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block script %}
+      <script src="{{url_for('static', filename='script/exit.js')}}"></script>
+{% endblock %}    

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+
+<h1 class="titulo">Crear Mesa</h1>
+<form id="form">
+<div class="menu">
+  <label>Nombre de la mesa:</label>
+  <input type="text" id="nombre" name="nombre">
+  <br><br>
+  <label>Contraseña de la mesa:</label>
+  <input type="text" id="contra" name="contra">
+  <br><br>
+  <label>ID de la mesa: </label>
+  <p> {{ id }} </p>
+  <label>A cuantos puntos: </label>
+  <select id="puntos" name="puntos">
+  <option value="15">15</option>
+  <option value="30">30</option>
+  </select>
+  
+</div>
+</form>
+
+<div id="fede"><button type="submit" onclick="crear()"id="volver">Crear</button>
+<button onclick="volver()"id="volver">volver</button></div>
+
+{% endblock %}
+
+{% block script %}
+<script src="{{url_for('static', filename='script/create.js')}}"></script>
+<script>
+function volver(){
+  location.href = "/salaDeEspera"
+}
+
+</script>
+
+
+{% endblock %}

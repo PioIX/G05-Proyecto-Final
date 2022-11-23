@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<h1>Usuarios:</h1>
+
+
+<div class="tabla" id="tabla">
+  {% for usuario in cantUsuarios %}
+    <div class='mesa'>
+      <strong>
+        <p>id: {{ usuario[0] }}</p>
+      </strong
+      <strong>
+        <p>usuario: {{ usuario[1] }}</p>
+      </strong>
+      {%if admin == True%}
+        <strong>
+        <p>contraseña: {{ usuario[2] }}</p>
+      </strong>
+        <label for="newname">Nuevo Nombre:</label>
+        <input id="newname" name="newname">
+        <button onclick="actualizar({{ usuario[0] }})">Cambiar nombre de usuario</button>
+        <button onclick="eliminar2({{ usuario[0] }})" class="unirse">Eliminar usuario</button>
+      {%endif%}
+    </div>
+  {% endfor %}
+</div>
+
+<div id="boton">
+<button type="button" onclick="volver()" id=volver>Volver</button>
+</div>
+  
+{% endblock %}
+
+
+{% block script %}
+<script src="{{url_for('static', filename='script/exit.js')}}"></script>
+  
+<script>
+
+function volver(){
+  location.href = "/salaDeEspera/"
+}
+</script>
+
+
+{% endblock %}

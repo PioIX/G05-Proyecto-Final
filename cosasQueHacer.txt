@@ -1,0 +1,19 @@
+Santi:
+
+En /aEsperar/, recibir de la base de datos el nombre del host y la cantidad de puntos a los que se juega una mesa usando la id.
+
+Y que en /crearMesa tambien se ingrese la cantidad de puntos a los que se juega
+
+Y que /eliminarMesa, elimine la sala de la id elegida
+
+   flexbox space between
+https://www.htmlcssbuttongenerator.com/css-button-generator.html (Pagina con el generador de buttons)
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy(TABLA USUARIOS)  
+
+
+.color1 { #311d39 };
+.color2 { #67434f };
+.color3 { #9b8e7e };
+.color4 { #c3ccaf };
+.color5 { #a51a41 };

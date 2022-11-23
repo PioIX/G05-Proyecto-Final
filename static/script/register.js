@@ -3,7 +3,7 @@ function registrarse(){
     let nombre = form["nombre"].value;
     let contra = form["contra"].value;
 
-    console.log(nombre, contra)
+
     if(nombre == "" || contra == ""){
         return alert('Faltan datos por rellenar')
   }else{
@@ -12,11 +12,11 @@ function registrarse(){
         url:"/register",
         type:"POST",
         data: {nombre:nombre, contra:contra},
-        success: function(respuesta){
-          if(respuesta == 'True' ){
+        success: function(response){
+          if(response == 'True' ){
             alert(nombre + ' añadido a la base de datos')
           }else{
-            alert(respuesta)
+            alert(response)
           }
         },
         error: function(error){

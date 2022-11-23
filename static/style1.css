@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+  margin-top: 300px;
+  width: 400px;
+  height: 300px;
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* display: flex; 
+  justify-content: center;
+  align-items: center; */
+}
+
+.conteiner {
+  margin-top: 300px;
+  margin-left: 200px;
+  width: 400px;
+  height: 300px;
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* display: flex; 
+  justify-content: center;
+  align-items: center; */
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  color: #311d39;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid ##a51a41;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: #311d39;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+
+
+
+
+*{
+  font-family: Arial;
+}
+
+body{
+background-color: #c3ccaf;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #311d39;
+}
+
+h1{
+  font-size: 100px;
+  margin-bottom: 110px;
+}
+
+.boton {
+  margin-top: 50px;
+  text-align: center;
+  border-radius:30px;
+}
+
+#label{
+  font-size: 40px;
+}
+
+#inicio{
+  text-align: center;
+}
+
+#inicia{
+  text-align: center;
+}
+
+#nombre{
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#contra{
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+input {
+    width: auto;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border: 1px solid #a51a41;
+}

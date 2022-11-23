@@ -8,15 +8,15 @@ function login(){
         return alert('Faltan datos por rellenar')
     }else{
         $.ajax({
-            url:"/log",
+            url:"/iniciado",
             type:"POST",
             data: {nombre:nombre, contra:contra},
             success: function(response){
-                if(response == 'True'){
-                  location.href = "https://Memotest.nicolasgr8.repl.co/inicio";
-                  alert('Inicio de sesion exitosa')
+                if(response == 'False'){
+                  alert('No existe ese usuario')
                 }else{
-                    alert('No existe ese usuario')
+                  alert('Inicio de sesion exitosa')
+                  location.href = '/salaDeEspera/'
                 }
             },
             error: function(error){

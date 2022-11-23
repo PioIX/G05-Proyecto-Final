@@ -1,15 +1,14 @@
-<title>Memotest</title>
+<!doctype html>
+    <head>
+      {% block head %}{% endblock %}
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" 
       href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 
-   <nav>
-    <a href="{{ url_for('tablero', id=0) }}">Tablero 1</a>
-    <a href="{{ url_for('tablero', id=1) }}">Tablero 2</a>
-    <a href="{{ url_for('tablero', id=2) }}">Tablero 3</a>
-</nav> 
-
+ 
   
 <body>
 
@@ -17,4 +16,7 @@
 
   
 </body>
+
+{% block script %}{% endblock %}
+
 </html>

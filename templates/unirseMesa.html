@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block body %} 
+
+<h1>Mesa {{ nombre }}</h1>
+
+<div class="table" id="table">
+
+<p><strong>ID de la sala: {{ id }}</strong></p>
+
+<p><strong>Creador de la sala: {{ creator }}</strong></p>
+
+<p>Se juega a {{ puntos }} y sin flor</p>
+
+</div>
+
+<div id="inicia">    
+  <button class="boton" onclick="ingame()">Unirse</button>
+  <button class="boton" onclick="volver()">Volver</button>
+</div>
+<script>
+  function volver(){
+    location.href = "/aEsperar/"
+  }
+  function ingame(){
+   // location.href = "/ingame"
+  }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+<script src="{{url_for('static', filename='script/socket.js')}}"></script>
+{% endblock %}
+

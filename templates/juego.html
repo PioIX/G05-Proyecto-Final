@@ -1,0 +1,99 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<title>Truco</title>
+<link rel="stylesheet" type="text/css" 
+      href="{{ url_for('static', filename='style2.css') }}">
+</head>
+
+  
+<body>
+
+<div id="unirseMesa">
+
+<h1>Mesa {{ nombre }}</h1>
+
+<div class="table" id="table">
+
+<p><strong>ID de la sala: {{ id }}</strong></p>
+
+<p id="esperando"><strong></strong></p>
+
+
+<p>Se juega a {{ puntos }} y sin flor</p>
+
+</div>
+
+<div id=inicia>    
+  <button id="boton_jugar" class="boton">Unirse</button>
+  <button class="boton" onclick="volver()">Volver</button>
+</div>
+  
+</div>
+  
+<div id="juego" style="display: none;">
+  
+<div id="contador">
+  <div id="nos" class="puntos"><strong>Nos: 0</strong></div>
+  <div id="ellos" class="puntos"><strong>Ellos: 0</strong></div>
+</div>
+<center>
+<div id="mesa">
+  
+  <div id="cartasContrincante" class="cartas">
+    <div id="cartaSuya1" class="carta" name="cartasSuyas"></div>
+    <div id="cartaSuya2" class="carta" name="cartasSuyas"></div>
+    <div id="cartaSuya3" class="carta" name="cartasSuyas"></div>
+  </div>
+  
+  <div id="cartasTuyas" class="cartas">
+    <div id="cartaTuya1" class="carta" name="cartasTuyas"></div>
+    <div id="cartaTuya2" class="carta" name="cartasTuyas"></div>
+    <div id="cartaTuya3" class="carta" name="cartasTuyas"></div>
+  </div>
+</div>
+</center>
+<center>
+<div id="mano">
+  <div id="carta1" class="carta"></div>
+  <div id="carta2" class="carta"></div>
+  <div id="carta3" class="carta"></div>
+</div>
+</center>
+    <div id="opciones">
+
+    
+  <div id="especial" class="opcion"> <button class="boton"type="submit" onclick='{{ function }}'><strong> especial </strong></button> </div>
+      
+  <div id="truco" class="opcion"> <button class="boton" name="truco" type="submit" onclick=""><strong> Truco </strong></button></div>
+  
+  <div id="retruco" class="opcion"> <button class="boton" name="truco" type="submit" onclick=""><strong> Retruco </strong></button></div>
+  
+  <div id="valeCuatro" class="opcion"> <button class="boton" name="truco" type="submit" onclick=""><strong> Vale Cuatro </strong></button></div>
+  
+  <div id="envido" class="opcion"> <button class="boton" name="envido" type="submit" onclick="envido()"><strong> Envido </strong></button></div>
+  
+  <div id="realEnvido" class="opcion"> <button class="boton" name="envido" type="submit" onclick="envido()"><strong> Real Envido </strong></button></div>
+  
+  <div id="faltaEnvido" class="opcion"> <button class="boton" name="envido" type="submit" onclick="envido()"><strong> Falta Envido </strong></button></div>
+  
+  <div id="quiero" class="opcion"> <button class="boton" name="querer" type="submit" onclick=""><strong> Quiero </strong></button></div>
+  
+  <div id="noQuiero" class="opcion"> <button class="boton" name="querer" type="submit" onclick=""><strong> No quiero </strong></button></div>
+
+</div>
+
+</div>
+</body>
+
+<script> 
+function volver(){
+    location.href = "/salaDeEspera/"
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+<script src="{{url_for('static', filename='script/socket.js')}}"></script>
+
+</html>

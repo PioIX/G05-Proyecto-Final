@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<header>{% if admin == True%}
+<button class="salgado"id="volver"type="button" onclick="usuarios()" id=usuarios>Ver Usuarios</button>
+{%endif%}
+ </div> </header>
+<title>Mesas disponibles</title>
+{% endblock %}
+{% block body %}
+<h1 id="mesas_dispo">Mesas disponibles:</h1>
+
+
+<div class="tabla" id="tabla">
+  {% for mesa in cantMesas %}
+    <div class='mesa'>
+      <strong>
+        <p>{{ mesa[1] }}</p>
+      </strong>
+      {% if mesa[2] != '' %}
+      <form  method="post" id="primero">
+      <label for="password">Contraseña: </label>
+      <input type="password" name="contra"> <br> <br>
+      <button onclick="contra({{ mesa[0] }})" class="unirse">Unirse</button>
+    </form>
+      {%endif%}
+      {% if mesa[2] == '' %}
+       <button onclick="unir({{ mesa[0] }})" class="unirse">Unirse</button>
+      {%endif%}
+      {%if admin == True%}
+        <button onclick="eliminarV2({{ mesa[0] }})" class="unirse">Eliminar</button>
+      {%endif%}
+    </div>
+  {% endfor %}
+</div>
+<div id="botoncito">
+  <button class="reglas" onclick="crear()" id="crear">Crear Mesa</button>
+  <button class="reglas" type="button" onclick="volver()" id=volver id=volver2>Volver</button>
+ <button class="reglas"onclick="reglas()" >Reglas</button>
+
+</div>
+
+
+
+{% endblock %}
+
+
+{% block script %}
+<script src="{{url_for('static', filename='script/exit.js')}}"></script>
+<script>
+function eliminar(id){
+  location.href = "/elim/" + id
+}
+function reglas(){
+  location.href = "/reglas"
+}
+function crear(){
+  location.href = "/crear"
+}
+function unir(id){
+  location.href = "/unirse/" + id
+}
+function volver(){
+  location.href = "/"
+}
+function usuarios(){
+  location.href = "/usuarios"
+}
+</script>
+
+
+{% endblock %}
